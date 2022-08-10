@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Phase-2 class pblms</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  <servlet-name>Homeservlet</servlet-name>
+  <servlet-class>com.Homeservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Homeservlet</servlet-name>
+  <url-pattern>/servlet</url-pattern>
+  </servlet-mapping>
+  <filter>
+  <filter-name>Validfilter</filter-name>
+  <filter-class>com.Validfilter</filter-class>
+  </filter> 
+  <filter-mapping>
+  <filter-name>Validfilter</filter-name>
+  <servlet-name>Homeservlet</servlet-name>
+  </filter-mapping>
+  <filter>
+  <filter-name>DatacheckFilter</filter-name>
+  <filter-class>com.DatacheckFilter</filter-class>
+  </filter> 
+   <filter-mapping>
+  <filter-name>DatacheckFilter</filter-name>
+  <servlet-name>Homeservlet</servlet-name>
+  </filter-mapping>
+  
+  
+</web-app>

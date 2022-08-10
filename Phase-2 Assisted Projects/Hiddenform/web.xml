@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>HiddenForm</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+    <servlet>
+    <servlet-name>HiddenFormDashboard</servlet-name>
+    <servlet-class>com.HiddenFormDashboard</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>HiddenFormDashboard</servlet-name>
+    <url-pattern>/hiddenformdashboard</url-pattern>
+  </servlet-mapping>
+ 
+    <servlet>
+    <servlet-name>HiddenFormServlet</servlet-name>
+    <servlet-class>com.HiddenFormServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+    <servlet-name>HiddenFormServlet</servlet-name>
+    <url-pattern>/hiddenformlogin</url-pattern>
+    </servlet-mapping>
+</web-app>
