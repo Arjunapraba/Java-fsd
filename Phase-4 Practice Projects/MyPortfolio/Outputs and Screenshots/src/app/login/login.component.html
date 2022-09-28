@@ -1,0 +1,18 @@
+
+<h1  style="text-align:center; margin-top: 50px; color: rgb(56, 238, 59);">Sign In to Your Portfolio</h1>
+<br>
+<h3 style="color:blueviolet; margin-left: 580px;">Enter the Credentials to login</h3>>
+<form class="container" style="margin-left:600px;">
+   <br>
+   <h4 style="text-align: center;">Sign In</h4>
+   <br>
+   &nbsp;Username:&nbsp;<input type="text" name="username" [(ngModel)]="username"/>
+    <br>
+    <br>
+    &nbsp;Password:&nbsp;&nbsp;<input type="password" name="password" [(ngModel)]="password"/>
+    <br><br><br>
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+   <button class="btn btn-success" (click)= handlelogin()>&nbsp;&nbsp;Login&nbsp;&nbsp;</button>
+<br><br>
+ <small *ngIf="invalidlogin" style="color: red; font-size:20px; font-weight:bolder;">{{errorMessage}}</small>
+</form>
