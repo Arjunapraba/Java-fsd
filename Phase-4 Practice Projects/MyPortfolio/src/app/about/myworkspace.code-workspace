@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../first-webapp"
+		},
+		{
+			"path": "../../../../Routing"
+		},
+		{
+			"path": "../../../../../../Java-fsd"
+		}
+	],
+	"settings": {}
+}

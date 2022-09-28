@@ -1,0 +1,17 @@
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <div>
+            <a routerLink="home" class="navbar-brand" style="font-size: 30px;">My Portfolio</a>
+        </div>
+    <ul class="navbar-nav">
+       <li><a *ngIf="hardcodedauthenticationserviceService.isLoggedIn()" routerLink="home" class="nav-link" style="color:white;">&nbsp;Home&nbsp;</a></li>
+       <li><a *ngIf="hardcodedauthenticationserviceService.isLoggedIn()" routerLink="about" class="nav-link" style="color:white;">&nbsp;About&nbsp;</a></li>
+       <li><a *ngIf="hardcodedauthenticationserviceService.isLoggedIn()" routerLink="projects" class="nav-link" style="color:white;">&nbsp;Projects&nbsp;</a></li>
+       <li><a *ngIf="hardcodedauthenticationserviceService.isLoggedIn()" routerLink="contact" class="nav-link" style="color:white;">&nbsp;Contact&nbsp;</a></li>
+      
+    </ul>  
+    <ul class="navbar-nav navbar-collapse justify-content-end">
+       <li><a *ngIf="hardcodedauthenticationserviceService.isLoggedIn()" routerLink="logout" class="nav-link" style="color:white;">&nbsp;Sign Out&nbsp;</a></li>
+     </ul>   
+    </nav>
+</header>
