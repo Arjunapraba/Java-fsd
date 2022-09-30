@@ -1,0 +1,18 @@
+
+<h1  style="text-align:center; margin-top: 50px;">Welcome to  Event Management Application</h1>
+<br>
+<br>
+<form class="container" style="margin-left:600px;">
+   <br>
+   <h4 style="text-align: center;">Login</h4>
+   <br>
+   &nbsp;Username:&nbsp;<input type="text" name="username" [(ngModel)]="username"/>
+    <br>
+    <br>
+    &nbsp;Password:&nbsp;&nbsp;<input type="password" name="password" [(ngModel)]="password"/>
+    <br><br><br>
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+   <button class="btn btn-success" (click)= handlelogin()>&nbsp;&nbsp;Login&nbsp;&nbsp;</button>
+<br><br>
+ <small *ngIf="invalidlogin" style="color: red; font-size:20px; font-weight:bolder;">{{errorMessage}}</small>
+</form>

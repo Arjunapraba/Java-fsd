@@ -1,0 +1,22 @@
+
+<h1 style="text-align:center; margin-top:50px; color:blue;">Master database of all the Employees</h1>
+<div style="margin-top:80px;">
+<table  class="table" style="width:1000px; padding:10px; margin-left:300px;">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of employeeData">
+           <td>{{row.id}}</td>
+           <td>{{row.firstname}}</td>
+           <td>{{row.lastname}}</td>
+           <td>{{row.email}}</td>
+        </tr>
+    </tbody>
+    </table>
+</div>
