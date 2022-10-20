@@ -1,0 +1,30 @@
+<h2 style="color:rgb(253, 155, 7); margin-top:10px;margin-left:580px;">Application for new Aadhar</h2>
+<div style="margin-top:15px;margin-left:400px; width:800px; border: 2px solid black;margin-bottom:10px; padding:20px;">
+    <h3 style="margin-left:300px ;">Form-1</h3>
+<form>
+<div class="form-group">
+  <label type="text" name="mobilenumber">Username</label>
+  <input  class="form-control" name="name" [(ngModel)]="apply.name">
+</div>
+<div class="form-group">
+    <label type="text" name="dob">Date of Birth</label>
+    <input  class="form-control" name="dob" [(ngModel)]="apply.dob">
+  </div>
+  <div class="form-group">
+    <label type="text" name="dob">Permanent Address</label>
+    <input  class="form-control" name="address" [(ngModel)]="apply.address">
+  </div>  
+<div class="form-group">
+  <label for="emailid">Email Id</label>
+  <input class="form-control" name="emailid" [(ngModel)]="apply.emailid">
+</div>
+<div class="form-group">
+    <label for="mobno">Mobile Number</label>
+    <input class="form-control" name="mobno" [(ngModel)]="apply.mobno">
+  </div>
+<div class="form-group">
+    <label for="gender">Gender</label>
+    <input class="form-control" name="gender" [(ngModel)]="apply.gender">
+</div>  
+<button type="submit" (click)="applyNow()" class="btn btn-warning" routerLink="/afterapply">Submit</button>
+</form></div>

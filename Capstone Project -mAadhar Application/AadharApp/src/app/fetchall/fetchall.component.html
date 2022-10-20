@@ -1,0 +1,35 @@
+<div>
+    <h1 style="margin-top:25px; margin-left:480px; color:rgb(11, 23, 245);">Masterdatabase of All Applicants</h1>
+    </div>
+    <div style="margin-top:50px;margin-bottom:60px;">
+    <table class="table table-bordered">
+        <thead class="thead-dark">
+            <tr>
+              <th>Citizen Name</th> 
+              <th>Mobile Number</th>
+              <th>Email Id</th>
+              <th>Aadhar Number</th>
+              <th>Application Id</th>
+              <th>Application status</th>
+              <th>Issue date</th>
+              <th>Citizen Id</th>
+            </tr>
+        </thead>
+            <tbody>
+                <tr *ngFor="let dup of dup">
+                   <td>{{dup.name}}</td> 
+                   <td>{{dup.mobno}}</td>
+                   <td>{{dup.emailid}}</td>
+                   <td>{{dup.aadhar_number}}</td>
+                   <td>{{dup.applicationId}}</td>
+                   <td>{{dup.status_of_application}}</td>
+                   <td>{{dup.Issue_date}}</td>
+                   <td>{{dup.citizen_id}}</td>    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <div style="margin-left:700px ;">
+        <button type="button" class="btn btn-dark" routerLink="/adminpage">Go back</button>
+    </div>

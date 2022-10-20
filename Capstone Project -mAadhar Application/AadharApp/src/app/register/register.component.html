@@ -1,0 +1,18 @@
+<div style="margin-top:200px;margin-left:480px; width:650px; border: 2px solid black; padding:20px;">
+    <h3 style="margin-left:180px ;">Register User</h3>
+<form>
+<div class="form-group">
+  <label type="text" name="mobilenumber">Mobile Number</label>
+  <input  class="form-control" name="mobilenumber" [(ngModel)]="register.mobilenumber">
+</div>
+<div class="form-group">
+    <label type="text" name="username">Username</label>
+    <input  class="form-control" name="username" [(ngModel)]="register.username">
+  </div>
+<div class="form-group">
+  <label for="password">Password</label>
+  <input type="password" class="form-control" name="password" [(ngModel)]="register.password">
+</div>
+<button type="submit" class="btn btn-primary" (click)="registerNow()" routerLink="/registered">Submit</button>
+</form>
+</div>
