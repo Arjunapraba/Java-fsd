@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Test-Suite" >
+   <test name="Aadhartest" >
+       <classes> 
+          <class name="com.Aaadhar_app" >
+          </class>
+       </classes>
+   </test>
+ </suite>
+ 
